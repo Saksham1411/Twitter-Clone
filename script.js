@@ -3,9 +3,16 @@ var btn = document.getElementById('add-btn');
 var posts = document.querySelector('.posts');
 let postCnt  =0;
 btn.addEventListener('click',addPost);
+let isEdit = false;
 
 function addPost(){
     let postContent = input.value;
+    if(isEdit===true){
+        let post = document.querySelector('.edited');
+        console.log(post);
+        post.remove();
+        isEdit=false;
+    }
     if(postContent.trim()!==""){
         createPost(postContent);
         postCnt++;
@@ -64,6 +71,7 @@ function createPost(postContent){
 
     //adding eventListener on edit and del
     delBtn.addEventListener('click',removePost);
+    edit.addEventListener('click',editPost);
 
     let postData = document.createElement('div');
     postData.className = 'post-data';
@@ -99,4 +107,11 @@ function removePost(e){
         posts.removeChild(post);
         // console.log(post);
     }
+}
+
+function editPost(e){
+    let post = e.target.parentElement.parentElement.parentElement.nextSibling;
+    input.value = post.textContent;
+    e.target.parentElement.parentElement.parentElement.parentElement.parentElement.classList.add('edited');
+    isEdit = true;
 }
