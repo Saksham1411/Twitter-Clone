@@ -233,9 +233,9 @@ ul.side li:hover {
 
 .search-bar h2{
     margin: 12px 0px 12px 0px;
-    font-family: 'Poppins';
-    letter-spacing: 2px;
-    font-size: 32px;
+    font-family: 'Poppins',sans-serif;
+    letter-spacing: 1px;
+    font-size: 28px;
     font-weight: 700;
 }
 
@@ -260,8 +260,9 @@ ul.side li:hover {
 .search input{
     background-color: #243447;
     width: 80%;
-    font-size:16px;
+    font: size 15px;
     font-family: 'Poppins', sans-serif;
+    margin-bottom: 15px;
     font-weight: 500;
     letter-spacing: 1px;
     color: #ffffff;
