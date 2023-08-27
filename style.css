@@ -10,7 +10,6 @@ body {
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   line-height: 2rem;
   display: flex;
-  max-width: 1300px;
   height: 100vh;
 }
 ul {
@@ -208,12 +207,77 @@ ul.side li:hover {
   cursor: pointer;
   color: white;
 }
-/* trends */
+
+
+
+
+
+
+/* Trends */
 .trends {
   flex: auto;
   /* flex-shrink: 0; */
   flex-grow: 1;
+  display: flex;
+  flex-direction: column;
 }
+
+.search-bar{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1em;
+    margin-top: 20px;
+}
+
+.search-bar h2{
+    margin: 12px 0px 12px 0px;
+    font-family: 'Poppins';
+    letter-spacing: 2px;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.search{
+    margin-top: 10px;
+    width: 80%;
+    height:48px;
+    border-radius: 25px;
+    background-color: #243447;
+    border: none;
+    padding: 0 1em;
+    color: white;
+}
+
+.search i{
+    font-size: 20px;
+    font-style: normal;
+    color: #ffffff;
+    margin:15px 12px 15px 0px ;
+}
+
+.search input{
+    background-color: #243447;
+    width: 80%;
+    font-size:16px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: #ffffff;
+    border: none;
+    outline: none;
+}
+
+
+
+
+
+
+
+
+
+
 
 @media (max-width: 1282px) {
   .sidebar {
