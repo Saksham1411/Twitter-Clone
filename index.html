@@ -1,91 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
-        <script
-            src="https://kit.fontawesome.com/953931bfaa.js"
-            crossorigin="anonymous"
-        ></script>
-        <link rel="stylesheet" href="style.css" />
-    </head>
-    <body>
-        <div class="sidebar">
-            <!-- <div class="logo"><i class="fa-brands fa-threads fa-2xl"></i></div> -->
-            <ul class="side">
-                <div><i class="fa-brands fa-threads fa-2xl"></i></div>
-                <li>
-                    <i class="fa-solid fa-house fa-xl"></i> <span>Home</span>
-                </li>
-                <li>
-                    <i class="fa-solid fa-search fa-xl"></i>
-                    <span>Explore</span>
-                </li>
-                <li>
-                    <i class="fa-regular fa-bell fa-xl"></i>
-                    <span>Notifications</span>
-                </li>
-                <li>
-                    <i class="fa-regular fa-envelope fa-xl"></i>
-                    <span> Messages</span>
-                </li>
-                <li>
-                    <i class="fa-solid fa-rectangle-list fa-xl"></i>
-                    <span>Lists</span>
-                </li>
-                <li>
-                    <i class="fa-solid fa-user-group fa-xl"></i>
-                    <span>Communities</span>
-                </li>
-                <li>
-                    <i class="fa-regular fa-user fa-xl"></i>
-                    <span>Profile</span>
-                </li>
-                <li>
-                    <i class="fa-solid fa-ellipsis fa-xl"></i><span>More</span>
-                </li>
-                <div><button class="post-btn">Post</button></div>
-                <div class="user">
-                    <div class="dp"></div>
-                    <span
-                        ><h4>Deadpool</h4>
-                        <p>Wade Wilson</p></span
-                    >
-                </div>
-            </ul>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://kit.fontawesome.com/953931bfaa.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Side Bar -->
+    <div class="sidebar">
+      <!-- <div class="logo"><i class="fa-brands fa-threads fa-2xl"></i></div> -->
+      <ul class="side">
+        <div><i class="fa-brands fa-threads fa-2xl"></i></div>
+        <li><i class="fa-solid fa-house fa-xl"></i> <span>Home</span></li>
+        <li>
+          <i class="fa-solid fa-search fa-xl"></i>
+          <span>Explore</span>
+        </li>
+        <li>
+          <i class="fa-regular fa-bell fa-xl"></i>
+          <span>Notifications</span>
+        </li>
+        <li>
+          <i class="fa-regular fa-envelope fa-xl"></i>
+          <span> Messages</span>
+        </li>
+        <li>
+          <i class="fa-solid fa-rectangle-list fa-xl"></i>
+          <span>Lists</span>
+        </li>
+        <li>
+          <i class="fa-solid fa-user-group fa-xl"></i>
+          <span>Communities</span>
+        </li>
+        <li>
+          <i class="fa-regular fa-user fa-xl"></i>
+          <span>Profile</span>
+        </li>
+        <li><i class="fa-solid fa-ellipsis fa-xl"></i><span>More</span></li>
+        <div><button class="post-btn">Post</button></div>
+        <div class="user">
+          <div class="dp"></div>
+          <span
+            ><h4>Deadpool</h4>
+            <p>Wade Wilson</p></span
+          >
         </div>
-        <div class="feed">
-            <div class="top">
-                <h2>Home</h2>
-            </div>
-            <div class="select">
-                <div class="option"><h4>For you</h4></div>
-                <div class="option"><h4>Following</h4></div>
-            </div>
-            <div class="add-post">
-                <div class="form">
-                    <div class="dp"></div>
-                    <input
-                        type="text"
-                        name=""
-                        id="input"
-                        placeholder="What is happening?!"
-                    />
-                </div>
-                <div class="bottom">
-                    <div class="icons">
-                        <i class="fa-regular fa-image"></i>
-                        <i class="fa-solid fa-list"></i>
-                        <i class="fa-regular fa-face-smile"></i>
-                        <i class="fa-solid fa-business-time"></i>
-                        <i class="fa-solid fa-location-dot"></i>
-                    </div>
-                    <input type="submit" class="post-btn" id="add-btn" value="Post">
-                </div>
-            </div>
-            <div class="posts">
-                <!-- <div class="post">
+      </ul>
+    </div>
+
+    <!-- Feed -->
+    <div class="feed">
+      <div class="top">
+        <h2>Home</h2>
+      </div>
+      <div class="select">
+        <div class="option"><h4>For you</h4></div>
+        <div class="option"><h4>Following</h4></div>
+      </div>
+      <div class="add-post">
+        <div class="form">
+          <div class="dp"></div>
+          <input
+            type="text"
+            name=""
+            id="input"
+            placeholder="What is happening?!"
+          />
+        </div>
+        <div class="bottom">
+          <div class="icons">
+            <i class="fa-regular fa-image"></i>
+            <i class="fa-solid fa-list"></i>
+            <i class="fa-regular fa-face-smile"></i>
+            <i class="fa-solid fa-business-time"></i>
+            <i class="fa-solid fa-location-dot"></i>
+          </div>
+          <input type="submit" class="post-btn" id="add-btn" value="Post" />
+        </div>
+      </div>
+      <div class="posts">
+        <!-- <div class="post">
                     <div class="dp"></div>
                     <div class="data">
                         <div class="user">
@@ -133,13 +132,12 @@
                         </div>
                     </div>
                 </div> -->
-                   
-            </div>
-        </div>
-        <div class="trends">
-            
-        </div>
+      </div>
+    </div>
 
-        <script src="script.js"></script>
-    </body>
+    <!-- Trends -->
+    <div class="trends"></div>
+
+    <script src="script.js"></script>
+  </body>
 </html>
