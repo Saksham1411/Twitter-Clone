@@ -277,7 +277,26 @@ ul.side li:hover {
 
         .latest{
             padding: 32px;
-            
+            width: 90%;
+            height:200px;
+            background-color: #19273760;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            border-radius: 30px;
+        }
+
+        .sec1 span{
+            color: #c51f5d;
+            opacity: 0.8;
+        }
+
+        .sec1 span i {
+            color: #c51f5d;
+            font-size: 8px;
+            margin-right: 4px;
+            margin-left: 8px;
+            padding-bottom: 5px;
         }
 
 
