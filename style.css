@@ -17,7 +17,7 @@ ul {
 }
 .sidebar {
   max-width: 300px;
-  height: 100vh;
+  height: 100%;
   display: flex;
   position: fixed;
   flex-direction: column;
@@ -83,6 +83,7 @@ margin-left:250px;
   /* flex-shrink: 3; */
   /* flex-basis: 1; */
   flex-grow: 1;
+  width: 45em;
 }
 .feed .top {
   padding: 10px;
@@ -387,7 +388,10 @@ margin-left:250px;
     margin-left: 120px;
   }
 }
-@media (max-width: 684px) {
+@media (max-width: 847px) {
+  body{
+    overflow: hidden;
+  }
   .sidebar {
     flex: 0.1;
   }
@@ -396,13 +400,15 @@ margin-left:250px;
     
   }
   .trends {
-    flex: 0;
+    display: none;
+    /* overflow:hidden;  */
   }
 }
 @media (max-width: 450px) {
   body {
     position: relative;
     flex-direction: column-reverse;
+    display: block;
   }
   .sidebar {
     max-width: 500px;
@@ -419,8 +425,9 @@ margin-left:250px;
     bottom: -15px;
   }
   .feed {
-    overflow-y: scroll;
+    /* overflow-y: scroll; */
     margin-left:10px;
+    width: auto;
   }
   .trends {
     display: none;
